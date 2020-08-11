@@ -8,7 +8,7 @@ namespace DevoxTestTask.BLL.Interfaces
 {
     public interface IActivityService
     {
-        Task<ActivityDTO> GetActivitiesByEmployeePerDate(int id, DateTime date);
-        Task<ActivityDTO> GetActivitiesByEmployeePerWeek(int id, int week);
+        Task<string> GetActivitiesByEmployeePerDate(int id, DateTime date);
+        Task<string> GetActivitiesByEmployeePerWeek(int id, int week);
     }
 }

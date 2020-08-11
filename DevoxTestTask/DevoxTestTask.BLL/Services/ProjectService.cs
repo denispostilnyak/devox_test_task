@@ -10,18 +10,21 @@ using DevoxTestTask.DAL;
 using DevoxTestTask.DAL.Entities;
 using DevoxTestTaskCommon.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace DevoxTestTask.BLL.Services
 {
     public class ProjectService : IProjectService
     {
         private readonly DevoxTestTaskDbContext _devoxTestTaskDbContext;
+        private readonly ILogger<ProjectService> _logger;
         private readonly IMapper _mapper;
 
-        public ProjectService(DevoxTestTaskDbContext devoxTestTaskDbContext, IMapper mapper)
+        public ProjectService(DevoxTestTaskDbContext devoxTestTaskDbContext, IMapper mapper, ILogger<ProjectService> logger)
         {
             _devoxTestTaskDbContext = devoxTestTaskDbContext;
             _mapper = mapper;
+            _logger = logger;
         }
         public async Task CreateProject(ProjectDTO projectDTO)
         {
@@ -33,7 +36,9 @@ namespace DevoxTestTask.BLL.Services
 
         public async Task DeleteProject(int projectId) {
             if (await _devoxTestTaskDbContext.Projects
-                .FirstOrDefaultAsync((project) => project.Id == projectId) == null) {
+                .FirstOrDefaultAsync((project) => project.Id == projectId) == null)
+            {
+                _logger.LogError("Entity project was not found");
                 throw new NotFoundException("project");
             }
 
@@ -55,6 +60,7 @@ namespace DevoxTestTask.BLL.Services
             if (await _devoxTestTaskDbContext.Projects
                 .FirstOrDefaultAsync((project) => project.Id == id) == null)
             {
+                _logger.LogError("Entity project was not found");
                 throw new NotFoundException("project");
             }
 
@@ -71,6 +77,7 @@ namespace DevoxTestTask.BLL.Services
             if (await _devoxTestTaskDbContext.Projects
                 .FirstOrDefaultAsync((project) => project.Id == projectDTO.Id) == null)
             {
+                _logger.LogError("Entity project was not found");
                 throw new NotFoundException("project");
             }
 

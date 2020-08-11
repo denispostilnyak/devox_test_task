@@ -9,3 +9,4 @@ C:\Users\Denis\Documents\GitHub\devox_test_task\DevoxTestTask\DevoxTestTask.DAL\
 C:\Users\Denis\Documents\GitHub\devox_test_task\DevoxTestTask\DevoxTestTask.DAL\bin\Debug\netcoreapp3.1\DevoxTestTask.DAL.runtimeconfig.json
 C:\Users\Denis\Documents\GitHub\devox_test_task\DevoxTestTask\DevoxTestTask.DAL\bin\Debug\netcoreapp3.1\DevoxTestTask.DAL.runtimeconfig.dev.json
 C:\Users\Denis\Documents\GitHub\devox_test_task\DevoxTestTask\DevoxTestTask.DAL\obj\Debug\netcoreapp3.1\DevoxTestTask.DAL.genruntimeconfig.cache
+C:\Users\Denis\Documents\GitHub\devox_test_task\DevoxTestTask\DevoxTestTask.DAL\obj\Debug\netcoreapp3.1\DevoxTestTask.DAL.csproj.CoreCompileInputs.cache

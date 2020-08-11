@@ -21,13 +21,13 @@ namespace DevoxTestTask.WebAPI.Controllers
         }
 
         [HttpGet("day")]
-        public async Task<ActionResult<ActivityDTO>> GetActivityByEmployeePerDay(int id, DateTime date)
+        public async Task<ActionResult<string>> GetActivityByEmployeePerDay([FromBody]ActivityDataDTO data)
         {
-            return Ok(await _activityService.GetActivitiesByEmployeePerDate(id, date));
+            return Ok(await _activityService.GetActivitiesByEmployeePerDate(data.EmployeeId, data.Date));
         }
 
         [HttpGet("week")]
-        public async Task<ActionResult<ActivityDTO>> GetActivityByEmployeePerWeek(int id, int week)
+        public async Task<ActionResult<string>> GetActivityByEmployeePerWeek(int id, int week)
         {
             return Ok(await _activityService.GetActivitiesByEmployeePerWeek(id, week));
         }
