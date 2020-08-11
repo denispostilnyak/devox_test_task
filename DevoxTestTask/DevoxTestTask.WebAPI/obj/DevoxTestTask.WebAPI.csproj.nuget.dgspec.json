@@ -99,6 +99,10 @@
             "Serilog.Sinks.File": {
               "target": "Package",
               "version": "[4.1.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.5.1, )"
             }
           },
           "imports": [
@@ -211,6 +215,10 @@
             "Serilog.Sinks.File": {
               "target": "Package",
               "version": "[4.1.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.5.1, )"
             }
           },
           "imports": [
@@ -337,6 +345,10 @@
             "Serilog.Sinks.File": {
               "target": "Package",
               "version": "[4.1.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.5.1, )"
             }
           },
           "imports": [
@@ -449,6 +461,10 @@
             "Serilog.Sinks.File": {
               "target": "Package",
               "version": "[4.1.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.5.1, )"
             }
           },
           "imports": [

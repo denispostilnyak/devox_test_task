@@ -9,6 +9,7 @@ namespace DevoxTestTaskCommon.Models
         public int Id { get; set; }
         public string Name { get; set; }
         //here should be smth different from Entities
+        //for feature tasks
     }
     
 }

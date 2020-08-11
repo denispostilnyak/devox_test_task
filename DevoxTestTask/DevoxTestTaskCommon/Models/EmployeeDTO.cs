@@ -11,5 +11,6 @@ namespace DevoxTestTaskCommon.Models
         public DateTime Birthday { get; set; }
         public string Sex { get; set; }
         //here should be smth different from Entities
+        //for feature tasks
     }
 }

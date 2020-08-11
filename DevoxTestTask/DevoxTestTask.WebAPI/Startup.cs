@@ -35,6 +35,16 @@ namespace DevoxTestTask.WebAPI
             services.AddDbContext<DevoxTestTaskDbContext>(options => 
                 options.UseSqlServer(Configuration.GetConnectionString("DevoxTestTaskDatabase")));
 
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "DevoxTestTask",
+                    Description = "Swagger for DevoxTestTask"
+                });
+            });
+
             services.AddAutoMapper(typeof(MapperConfig));
 
             services.AddTransient<IProjectService, ProjectService>();
@@ -46,6 +56,11 @@ namespace DevoxTestTask.WebAPI
             if (env.IsDevelopment()) {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c => {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Devox");
+            });
 
             app.UseMiddleware<ExceptionMiddleware>();
 

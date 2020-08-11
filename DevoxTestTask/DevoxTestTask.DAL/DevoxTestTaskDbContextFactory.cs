@@ -11,7 +11,7 @@ namespace DevoxTestTask.DAL
         public DevoxTestTaskDbContext CreateDbContext(string[] args)
         {
             var optionBuilder = new DbContextOptionsBuilder<DevoxTestTaskDbContext>();
-            optionBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS01;Database=DevoxTestTaskDatabases;Trusted_Connection=true");
+            optionBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=DevoxTestTaskDatabase;Trusted_Connection=true");
 
             return new DevoxTestTaskDbContext(optionBuilder.Options);
         }

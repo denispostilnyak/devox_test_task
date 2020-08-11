@@ -143,4 +143,9 @@ C:\Users\Denis\Documents\GitHub\devox_test_task\DevoxTestTask\DevoxTestTask.WebA
 C:\Users\Denis\Documents\GitHub\devox_test_task\DevoxTestTask\DevoxTestTask.WebAPI\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Users\Denis\Documents\GitHub\devox_test_task\DevoxTestTask\DevoxTestTask.WebAPI\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Denis\Documents\GitHub\devox_test_task\DevoxTestTask\DevoxTestTask.WebAPI\bin\Debug\netcoreapp3.1\Serilog.Enrichers.Environment.dll
+C:\Users\Denis\Documents\GitHub\devox_test_task\DevoxTestTask\DevoxTestTask.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\Denis\Documents\GitHub\devox_test_task\DevoxTestTask\DevoxTestTask.WebAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Denis\Documents\GitHub\devox_test_task\DevoxTestTask\DevoxTestTask.WebAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Denis\Documents\GitHub\devox_test_task\DevoxTestTask\DevoxTestTask.WebAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Denis\Documents\GitHub\devox_test_task\DevoxTestTask\DevoxTestTask.WebAPI\obj\Debug\netcoreapp3.1\DevoxTestTask.WebAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Denis\Documents\GitHub\devox_test_task\DevoxTestTask\DevoxTestTask.WebAPI\obj\Debug\netcoreapp3.1\DevoxTestTask.WebAPI.MvcApplicationPartsAssemblyInfo.cache
