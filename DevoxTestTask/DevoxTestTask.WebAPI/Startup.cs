@@ -2,10 +2,17 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using DevoxTestTask.BLL.Interfaces;
+using DevoxTestTask.BLL.MapperProfiles;
+using DevoxTestTask.BLL.Services;
+using DevoxTestTask.DAL;
+using DevoxTestTask.WebAPI.ExceptionsMiddleware;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -24,6 +31,14 @@ namespace DevoxTestTask.WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services) {
             services.AddControllers();
+
+            services.AddDbContext<DevoxTestTaskDbContext>(options => 
+                options.UseSqlServer(Configuration.GetConnectionString("DevoxTestTaskDatabase")));
+
+            services.AddAutoMapper(typeof(MapperConfig));
+
+            services.AddTransient<IProjectService, ProjectService>();
+            services.AddTransient<IActivityService, ActivityService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -31,6 +46,8 @@ namespace DevoxTestTask.WebAPI
             if (env.IsDevelopment()) {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseMiddleware<ExceptionMiddleware>();
 
             app.UseHttpsRedirection();
 

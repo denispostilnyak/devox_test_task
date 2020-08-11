@@ -1,0 +1,11 @@
+C:\Users\Denis\Documents\GitHub\devox_test_task\DevoxTestTask\DevoxTestTaskCommon\bin\Debug\netcoreapp3.1\DevoxTestTaskCommon.deps.json
+C:\Users\Denis\Documents\GitHub\devox_test_task\DevoxTestTask\DevoxTestTaskCommon\bin\Debug\netcoreapp3.1\DevoxTestTaskCommon.dll
+C:\Users\Denis\Documents\GitHub\devox_test_task\DevoxTestTask\DevoxTestTaskCommon\obj\Debug\netcoreapp3.1\DevoxTestTaskCommon.csprojAssemblyReference.cache
+C:\Users\Denis\Documents\GitHub\devox_test_task\DevoxTestTask\DevoxTestTaskCommon\obj\Debug\netcoreapp3.1\DevoxTestTaskCommon.AssemblyInfoInputs.cache
+C:\Users\Denis\Documents\GitHub\devox_test_task\DevoxTestTask\DevoxTestTaskCommon\obj\Debug\netcoreapp3.1\DevoxTestTaskCommon.AssemblyInfo.cs
+C:\Users\Denis\Documents\GitHub\devox_test_task\DevoxTestTask\DevoxTestTaskCommon\bin\Debug\netcoreapp3.1\DevoxTestTaskCommon.runtimeconfig.json
+C:\Users\Denis\Documents\GitHub\devox_test_task\DevoxTestTask\DevoxTestTaskCommon\bin\Debug\netcoreapp3.1\DevoxTestTaskCommon.runtimeconfig.dev.json
+C:\Users\Denis\Documents\GitHub\devox_test_task\DevoxTestTask\DevoxTestTaskCommon\obj\Debug\netcoreapp3.1\DevoxTestTaskCommon.genruntimeconfig.cache
+C:\Users\Denis\Documents\GitHub\devox_test_task\DevoxTestTask\DevoxTestTaskCommon\bin\Debug\netcoreapp3.1\DevoxTestTaskCommon.pdb
+C:\Users\Denis\Documents\GitHub\devox_test_task\DevoxTestTask\DevoxTestTaskCommon\obj\Debug\netcoreapp3.1\DevoxTestTaskCommon.dll
+C:\Users\Denis\Documents\GitHub\devox_test_task\DevoxTestTask\DevoxTestTaskCommon\obj\Debug\netcoreapp3.1\DevoxTestTaskCommon.pdb
